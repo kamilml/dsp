@@ -43,7 +43,7 @@ const CardExampleWithAvatar = () => (
         />
       }
     >
-      <img src="http://puu.sh/uZsLl/0c5f8db9b3.jpg" alt="" />
+      <img src="https://puu.sh/uZsLl/0c5f8db9b3.jpg" alt="" />
     </CardMedia>
     <CardText>
       Entra a <a href="https://www.facebook.com/dotastoreperu/photos/a.610491485821539.1073741828.610440369159984/610491199154901/" target="_blank">esta publicación de facebook</a> y sigue los pasos para participar del sorteo.

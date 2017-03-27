@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+
 import {Link} from 'react-router-dom'
 import {Tabs, Tab} from 'material-ui/Tabs'
 import FontIcon from 'material-ui/FontIcon'
@@ -6,10 +7,10 @@ import FontIcon from 'material-ui/FontIcon'
 const styles = {
   headline: {
     background: '#424242',
-    fontWeight: 500
+    fontSize: 12
   },
   logo: {
-    background: 'url("http://puu.sh/uXMJp/44b6352187.png") center no-repeat #424242'
+    background: 'url("https://puu.sh/uXMJp/44b6352187.png") center no-repeat #424242'
   }
 }
 
@@ -19,6 +20,8 @@ export default class Titulo extends Component {
     return (
       <Tabs
         value={this.props.tab}
+        initialSelectedIndex={-1}
+        style={{padding: 0}}
       >
         <Tab
           value="home"
@@ -45,6 +48,13 @@ export default class Titulo extends Component {
           style={styles.headline}
           label="Registro"
           containerElement={<Link to="/registro" />}
+        />
+        <Tab
+          value="track"
+          icon={<FontIcon className="material-icons">list</FontIcon>}
+          style={styles.headline}
+          label="Track"
+          containerElement={<Link to="/track" />}
         />
       </Tabs>
     )

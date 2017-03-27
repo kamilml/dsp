@@ -10,9 +10,13 @@ import Titulo from '../Titulo.js'
 )*/
 
 const Registro = ({ match }) => (
-  <div id="<h100></h100>">
+  <div>
     <Helmet>
       <title>Registro</title>
+      <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/dota-store-peru.appspot.com/o/images%2Fregistro.jpg?alt=media&token=64015a4f-8f92-495a-8389-cca363960396"/>
+      <meta property="og:url" content="https://dotastore.pe/registro"/>
+      <meta property="og:description" content="Luego de hacer un pago reg&iacute;stralo ac&aacute; y sigue los pasos para recoger tu pedido."/>
+      <meta name="description" content="Luego de hacer un pago reg&iacute;stralo ac&aacute; y sigue los pasos para recoger tu pedido." />
     </Helmet>
 
     <Titulo tab="registro" />

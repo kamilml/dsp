@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {Helmet} from "react-helmet"
-import Titulo from '../Titulo.js'
 
+import Titulo from '../Titulo.js'
 import Divider from 'material-ui/Divider'
 import AutoComplete from 'material-ui/AutoComplete'
 import {RadioButton, RadioButtonGroup} from 'material-ui/RadioButton'
@@ -96,7 +96,11 @@ export default class DividerComponent extends Component {
     return (
       <div>
         <Helmet>
-          <title>Cuentas</title>
+          <title>Cuentas2</title>
+          <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/dota-store-peru.appspot.com/o/images%2Fcuentas.jpg?alt=media&token=7b4cc80c-180c-4af6-92d9-42e442cd30ab"/>
+          <meta property="og:url" content="https://dotastore.pe/cuentas"/>
+          <meta property="og:description" content="Elige la cuenta para tu provincia"/>
+          <meta name="description" content="Elige la cuenta para tu provincia" />
         </Helmet>
         
         <Titulo tab="cuentas" />
