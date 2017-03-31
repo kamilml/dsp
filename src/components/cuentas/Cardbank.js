@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Card, CardHeader, CardText} from 'material-ui/Card'
+import {Card, CardHeader} from 'material-ui/Card'
 import {Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn} from 'material-ui/Table'
 
 import {bankimages} from './db'
@@ -18,10 +18,6 @@ const styles = {
   },
   headerstyle: {
     overflow: 'hidden'
-  },
-  cardtext: {
-    padding: 0,
-    paddingLeft: 20
   },
   tabla: {
     paddingLeft: 10,
@@ -56,9 +52,6 @@ export default class CardExampleControlled extends Component {
           style={styles.headerstyle}
           titleStyle={styles.titlestyle}
         />
-        <CardText style={styles.cardtext}>
-          * Revisa la tabla de comisiones para tu provincia.<br/><br/>
-        </CardText>
         <Table>
           <TableHeader displaySelectAll={false} adjustForCheckbox={false}>
             <TableRow style={{height: 30, background: '#f5f5f5'}}>

@@ -23,3 +23,13 @@ iframe {
     bottom:0px;
     border:none
 }
+@media (max-width:640px){
+	.fb-post, .fb-post iframe, .fb-post span {
+        width: 97% !important;
+    }
+}
+@media (min-width:641px){
+	.fb-post, .fb-post iframe, .fb-post span {
+        width: 80% !important;
+    }
+}
