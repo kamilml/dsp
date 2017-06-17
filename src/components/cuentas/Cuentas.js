@@ -65,7 +65,7 @@ export default class DividerComponent extends Component {
               provincia={provincia}
               banco={'BCP'}
               comision={{'A':0, 'D':5}}
-              cuenta={dbbanco.BCP.Lima}
+              cuenta={dbbanco.BCP['Lima y Callao']}
             />;
             break;
           case undefined:
@@ -73,7 +73,7 @@ export default class DividerComponent extends Component {
               provincia={provincia}
               banco={'BCP'}
               comision={{'A':7.5, 'D':12.5}}
-              cuenta={dbbanco.BCP.Lima}
+              cuenta={dbbanco.BCP['Lima y Callao']}
             />;
             break;
           default:
@@ -92,7 +92,7 @@ export default class DividerComponent extends Component {
               provincia={provincia}
               banco={'Interbank'}
               comision={{'A':0, 'D':7}}
-              cuenta={dbbanco.Interbank.Lima}
+              cuenta={dbbanco.Interbank['Lima y Callao']}
             />;
             break;
           case undefined:
@@ -100,7 +100,7 @@ export default class DividerComponent extends Component {
               provincia={provincia}
               banco={'Interbank'}
               comision={{'A':0, 'D':9.5}}
-              cuenta={dbbanco.Interbank.Lima}
+              cuenta={dbbanco.Interbank['Lima y Callao']}
             />;
             break;
           default:
