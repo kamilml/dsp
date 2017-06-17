@@ -1,6 +1,6 @@
 import React from 'react'
 import {Helmet} from "react-helmet"
-import {BrowserRouter as Router, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
 import Home from './Home.js'
 import Precios from './precios/Precios'
@@ -20,11 +20,13 @@ const App = () => (
         <meta property="og:description" content="Compra con total seguridad de la forma m&aacute;s f&aacute;cil y r&aacute;pida en Dota Store Per&uacute;."/>
         <meta name="description" content="Compra con total seguridad de la forma m&aacute;s f&aacute;cil y r&aacute;pida en Dota Store Per&uacute;." />
       </Helmet>
-      <Route exact path="/" component={Home}/>
-      <Route path="/precios" component={Precios}/>
-      <Route path="/cuentas" component={Cuentas}/>
-      <Route path="/registro" component={Registro}/>
-      <Route path="/track" component={Track}/>
+      <Switch>
+        <Route exact path="/" component={Home}/>
+        <Route path="/precios" component={Precios}/>
+        <Route path="/cuentas" component={Cuentas}/>
+        <Route path="/registro" component={Registro}/>
+        <Route path="/track" component={Track}/>
+      </Switch>
     </div>
   </Router>
 )

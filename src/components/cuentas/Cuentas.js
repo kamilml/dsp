@@ -113,7 +113,7 @@ export default class DividerComponent extends Component {
         }
       }
       if (banco.BBVA === true){
-        if (provincia === 'Lima') {
+        if (provincia === 'Lima y Callao') {
           msg_bbva = <Cardbank
             provincia={provincia}
             banco={'BBVA'}
